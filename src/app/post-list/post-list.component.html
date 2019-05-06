@@ -1,0 +1,13 @@
+<div xmlns="http://www.w3.org/1999/html">
+<li class="list-group-item" [ngStyle]="{backgroundColor:getColorComponent()}"
+    [ngClass]="{'list-group-item':true,
+    'list-group-item-success':love>0,
+    'list-group-item-danger':love<0}">
+
+  <h2><strong style="text-align: left">{{titlePost}}</strong> <i style="float: right;font-size: small">{{datePub | date:'short'}}</i></h2>
+    <h4>{{contentPost}}</h4>
+    <button class="bg-success" (click)="loveIts1()" style="background-color: green;color: white">Love it</button>
+    <button class="bg-danger"  (click)="dontLoveIts()" style="background-color: red;color: white">Don't love it</button>
+
+</li>
+</div>
